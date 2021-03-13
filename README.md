@@ -1,3 +1,3 @@
 # Marketplace
 
-MP
+MP Project
