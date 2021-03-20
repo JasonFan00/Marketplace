@@ -21,6 +21,7 @@ export default function CenteredGrid() {
   const classes = useStyles();
 
   return (
+  
     <Container maxWidth = "lg">
       <div className={classes.root}>
         <Grid container spacing={3}>
@@ -62,5 +63,6 @@ export default function CenteredGrid() {
         </Grid>
       </div>
     </Container>
+	
   );
 }
