@@ -26,8 +26,11 @@ export default function CenteredGrid() {
       <div className={classes.root}>
         <Grid container spacing={3}>
           <Grid item xs={12}>
-            <Typography align = "center">
-              <Paper className={classes.paper}>xs=12</Paper>
+            <Typography variant = "h1" align = "center">
+              MARKETPLACE
+            </Typography>
+            <Typography variant = "h3" align = "center">
+                { "The NFT home for small and growing content creators"}
             </Typography>
           </Grid>
           <Grid item xs={6}>
