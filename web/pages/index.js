@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 
+import Home from '../components/organisms/home'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,36 +34,7 @@ export default function CenteredGrid() {
                 { "The NFT home for small and growing content creators"}
             </Typography>
           </Grid>
-          <Grid item xs={6}>
-            <Typography align = "center">
-              <Paper className={classes.paper}>xs=6</Paper>
-            </Typography>
-          </Grid>
-          <Grid item xs={6}>
-            <Typography align = "center">
-              <Paper className={classes.paper}>xs=6</Paper>
-            </Typography>
-          </Grid>
-          <Grid item xs={3}>
-            <Typography align = "center">
-              <Paper className={classes.paper}>xs=3</Paper>
-            </Typography>
-          </Grid>
-          <Grid item xs={3}>
-            <Typography align = "center">
-              <Paper className={classes.paper}>xs=3</Paper>
-            </Typography>
-          </Grid>
-          <Grid item xs={3}>
-            <Typography align = "center">
-              <Paper className={classes.paper}>xs=3</Paper>
-            </Typography>
-          </Grid>
-          <Grid item xs={3}>
-            <Typography align = "center">
-              <Paper className={classes.paper}>xs=3</Paper>
-            </Typography>
-          </Grid>
+          <Home/>
         </Grid>
       </div>
     </Container>
