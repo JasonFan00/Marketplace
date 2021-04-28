@@ -25,7 +25,7 @@ export default function NavBar(props) {
         <AppBar position="static">
             <Toolbar>
                 <Typography variant="h6" className={classes.title}>
-                LOGO
+                LOGO Here
                 </Typography>
                 <Button color="inherit">Login</Button>
             </Toolbar>
