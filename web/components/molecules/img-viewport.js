@@ -4,9 +4,17 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { spacing } from '@material-ui/system';
 import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles({
+    buttonNext: {
+      float: "right",
+    },
+  });
 
 export default function Viewport(props) {
+    const classes = useStyles();
 
     const fetchImgData = () => {
         return [
@@ -76,6 +84,24 @@ export default function Viewport(props) {
             {
                 buildImgGrid(fetchImgData())
             }
+
+            <Box display="flex" alignItems="flex-start" justifyContent="space-between" flexDirection="row" flexWrap="nowrap">
+                <Box order={1}>
+                    <Button variant="outlined">Prev</Button>
+                </Box>
+                <Box order={2} alignSelf="flex-end">  
+                    <Button className={classes.buttonNext} variant="outlined">Next</Button>
+                </Box>
+            </Box>
+
+            <Grid container direction="row" justify="space-between">
+                <Grid item xs={6}>
+                    <Button variant="outlined">Prev</Button>
+                </Grid>
+                <Grid item xs={6}>
+                    <Button className={classes.buttonNext} variant="outlined">Next</Button>
+                </Grid>
+            </Grid>
         </>
     )
 }
